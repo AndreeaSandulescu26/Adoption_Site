@@ -1,1 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
 
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+body{
+    font-family: var(--sm-font);
+}
+
+/* button */
+.bg-primary{
+    background-color: var(--pink)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 14px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* navbar */
+.navbar{
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+  }
+
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+
+.nav-item{
+    color: #000;
+}
+
+.nav-link:hover{
+    color: var(--pink)!important;
+}
+
+#cart_count{
+    text-align: center;
+    padding: 0 0.9rem 0.1rem 0.9rem;
+    border-radius: 3rem;
+}
+
+/* liniile despartitoare din menu */
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+.navbar-customclass {
+    background-color: #FEFBD3;
+}
+
+/* header */
+#header{
+    background: url(../images/IMG_header.PNG) top/cover no-repeat ;
+    background-color: #F8F9EA;
+}
+
+.carousel-inner h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.carousel-item .btn{
+    border-color: #fff!important;
+}
+.carousel-item .btn:hover{
+    border-color: var(--pink)!important;
+}
+
+
+/* AboutUs */
+
+#aboutus .text-center h2{
+    font-size: 40px;
+    font-family: var(--lg-font);
+}
+
+#aboutus .content p {
+    font-size: 1.25rem;
+    color: #000; 
+    margin-bottom: 40px;
+}
+
+/* Dogs*/
+#dogs .text-center h2{
+    font-size: 40px;
+    font-family: var(--lg-font);
+}
+
+
+#dogs .row .col-md-3 .card img{
+    max-width: 100%;
+    height: auto;
+    background: #F8F9EA;
+    background: radial-gradient(white 50%, #F8F9EA 50%);
+}
+
+
+#dogs .row .col-md-3 .card{
+    margin-bottom: 50px;
+}
+
+/* Shopping Cart */
+#shopping-cart .text-center h2{
+    font-size: 40px;
+    font-family: var(--lg-font);
+}
+
+#shopping-cart{
+    padding: 3% 0;
+}
+
+.cart-items + .cart-items{
+    padding: 2%0;
+}
+
+.price-details h6{
+    padding: 3%2%;
+}
+
+/* media queries */
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
+}
